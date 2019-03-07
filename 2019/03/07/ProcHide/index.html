@@ -83,18 +83,18 @@
 <meta name="keywords" content="反病毒">
 <meta property="og:type" content="article">
 <meta property="og:title" content="进程隐藏技术">
-<meta property="og:url" content="http://yoursite.com/2019/03/07/进程隐藏技术/index.html">
+<meta property="og:url" content="http://yoursite.com/2019/03/07/ProcHide/index.html">
 <meta property="og:site_name" content="luka077">
 <meta property="og:description" content="进程隐藏技术总结">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://yoursite.com/2019/03/07/进程隐藏技术/进程隐藏1.png">
-<meta property="og:image" content="http://yoursite.com/2019/03/07/进程隐藏技术/进程隐藏2.png">
-<meta property="og:image" content="http://yoursite.com/2019/03/07/进程隐藏技术/进程隐藏3.png">
-<meta property="og:updated_time" content="2019-03-07T05:37:50.990Z">
+<meta property="og:image" content="http://yoursite.com/2019/03/07/ProcHide/进程隐藏1.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/07/ProcHide/进程隐藏2.png">
+<meta property="og:image" content="http://yoursite.com/2019/03/07/ProcHide/进程隐藏3.png">
+<meta property="og:updated_time" content="2019-03-07T05:40:43.030Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="进程隐藏技术">
 <meta name="twitter:description" content="进程隐藏技术总结">
-<meta name="twitter:image" content="http://yoursite.com/2019/03/07/进程隐藏技术/进程隐藏1.png">
+<meta name="twitter:image" content="http://yoursite.com/2019/03/07/ProcHide/进程隐藏1.png">
 
 
 
@@ -124,7 +124,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/03/07/进程隐藏技术/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/03/07/ProcHide/"/>
 
 
 
@@ -267,7 +267,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/07/进程隐藏技术/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/07/ProcHide/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Guess">
@@ -352,11 +352,11 @@
 <p>l 利用环境变量LD_PRELOAD 或者配置ld.so.preload文件 以使的恶意的动态库先于系统标准库加载（类似于Windows平台的DLL劫持），一例采用上述手法进行挖矿的实例参考：<a href="https://www.anquanke.com/post/id/171523，这起事件中，把LD_PRELOAD相关的信息也在Hook时进行了过滤。" target="_blank" rel="noopener">https://www.anquanke.com/post/id/171523，这起事件中，把LD_PRELOAD相关的信息也在Hook时进行了过滤。</a></p>
 <p>此类方法并未修改/proc文件系统，只是在展示的过程中进行了过滤。</p>
 <p>3、挂载目录至指定进程/proc/pid下</p>
-<p><img src="/2019/03/07/进程隐藏技术/进程隐藏1.png" alt="进程隐藏1"></p>
+<p><img src="/2019/03/07/ProcHide/进程隐藏1.png" alt="进程隐藏1"></p>
 <p>执行mount –bind /tmp/xxx /proc/88881后，进程信息被隐藏</p>
-<p><img src="/2019/03/07/进程隐藏技术/进程隐藏2.png" alt="进程隐藏2"></p>
+<p><img src="/2019/03/07/ProcHide/进程隐藏2.png" alt="进程隐藏2"></p>
 <p>可通过查看/proc/$$/mountinfo或/proc/mounts看到挂载信息</p>
-<p><img src="/2019/03/07/进程隐藏技术/进程隐藏3.png" alt="进程隐藏3"></p>
+<p><img src="/2019/03/07/ProcHide/进程隐藏3.png" alt="进程隐藏3"></p>
 <p>解除挂载umount /proc/pid即可</p>
 <p>To be continue</p>
 
